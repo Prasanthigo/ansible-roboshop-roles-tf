@@ -32,6 +32,7 @@
 - name: download artifact from Nexus
   ansible.builtin.get_url:
     url: "http://52.201.245.151:8081/repository/roboshop/com/roboshop/catalogue/null/catalogue-null.zip"
+    dest: /tmp
     username: "{{nexus_username}}"
     password: "{{nexus_password}}"
 
