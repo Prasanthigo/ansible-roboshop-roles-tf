@@ -27,7 +27,7 @@
 # - name: "download {{component}} artifact"
 #   ansible.builtin.get_url:
 #     url: "https://roboshop-builds.s3.amazonaws.com/{{component}}.zip"
-#     dest: /tmp
+#   dest: /tmp
 
 - name: download artifact from Nexus
   ansible.builtin.get_url:
